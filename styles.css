@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: burlywood;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+}
+h1 {
+  background: darkkhaki;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.container {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.flexitem {
+  background-color: grey;
+  margin: 4%;
+  border-radius: 10px;
+  margin-top: 5rem;
+}
+
+.flexitemgrid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(5, 100%);
+  padding: 1em;
+}
+
+section h2 {
+  color: darkkhaki;
+  grid-column: 1 2;
+}
+
+.bookmark {
+  grid-column: 2 3;
+  margin-top: -3rem;
+  justify-self: end;
+}
+
+.question {
+  grid-area: 2 / 1 / 3 / -1;
+  justify-self: center;
+}
+
+.answerbutton {
+  grid-area: 3 / 1 / 4 / -1;
+  justify-self: center;
+}
+
+.tags {
+  grid-area: 5 / 1 / 6 / -1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.answer {
+  grid-area: 4 / 1 / 5 / -1;
+
+  justify-self: center;
+}
+.symbols {
+  width: 4rem;
+  height: auto;
+}
+
+.footerlinks {
+  position: fixed;
+  background: darkkhaki;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.gridprofile {
+  background: lightgray;
+  margin: 2%;
+  border-radius: 10px;
+  display: grid;
+  grid-columns: repeat(2, 50%);
+  grid-rows: repeat(5, 100%);
+}
+
+.profilefoto {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.profilename {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.profiletext {
+  grid-area: 2 / 1 / 3 / -1;
+}
+
+.profiletags {
+  grid-area: 3 / 1 / 4 / -1;
+  list-style-type: none;
+  display: flex;
+  justy-content: space-around;
+}
+
+.profilebutton {
+  grid-area: 4 / 1 / 5 / -1;
+}
