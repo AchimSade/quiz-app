@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run htmlhint && npm run prettier:write",
+    "machsmir": "npm run htmlhint && npm run prettier:write",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "htmlhint": "npx htmlhint \"**/*.html\"",
@@ -31,5 +31,8 @@
     "stylelint": "^14.6.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "lint-staged": "^12.3.6"
   }
 }
