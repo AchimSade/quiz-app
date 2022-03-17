@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/main.js" defer></script>
     <title>Revolution Quiz</title>
   </head>
 
@@ -21,7 +22,10 @@
           alt="set a bookmark"
         />
         <p class="question">In which year did the French Revolution start?</p>
-        <button class="answerbutton">Show Answer</button>
+        <button class="answerbutton" data-button-value="a1789">
+          Show Answer
+        </button>
+        <p class="answer b1789">1789</p>
         <div class="tags">
           <tag>France</tag>
           <tag>Absolutism</tag>
@@ -38,7 +42,10 @@
           alt="set a bookmark"
         />
         <p class="question">When was the February Revolution in Russia?</p>
-        <button class="answerbutton">Show Answer</button>
+        <button class="answerbutton" data-button-value="a1917">
+          Show Answer
+        </button>
+        <p class="answer b1917">1917</p>
         <div class="tags">
           <tag>Russia</tag>
           <tag>czar</tag>
@@ -55,8 +62,10 @@
           alt="set a bookmark"
         />
         <p class="question">In which year did the Cuban Revolution start?</p>
-        <button class="answerbutton">Hide Answer</button>
-        <p class="answer">1953</p>
+        <button class="answerbutton" data-button-value="a1953">
+          Show Answer
+        </button>
+        <p class="answer b1953">1953</p>
         <div class="tags">
           <tag>Cuba</tag>
           <tag>Fidel Castro</tag>
